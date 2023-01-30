@@ -161,10 +161,17 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         Notice the expected and received, expected is what the test is looking for, and received is what was actually returned from this function. You can also see it's passing in two values, the number 4 and the number 1. 
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
+const pounds = 15
+const dogAge = 1
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(pounds, dogAge){
+  //how much Bruno eats//
+  //if (age < 1) {
+    //(age/12)
+  //}
+  return(15 * .03)
 }
+console.log(hungryDog(15 * .03));
 
 
 
