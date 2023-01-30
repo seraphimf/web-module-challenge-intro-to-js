@@ -19,6 +19,11 @@ Do the following:
 
    HINT: no function required
 */
+  let votingAge = 15
+  if (votingAge >= 18) 
+    console.log ('true')
+   
+
 
 
 
@@ -33,6 +38,16 @@ Do the following:
 
    HINT: no function required
 */
+let firstThing = 10
+let secondThing = 5
+if (firstThing - secondThing === 5) {
+console.log('true');
+}
+firstThing = 20
+console.log(firstThing)
+
+
+
 
 
 
@@ -48,6 +63,10 @@ Do the following:
 
    HINT: look up the Number method
 */
+const num = '1999'
+console.log(parseInt(num))
+
+
 
 
 
