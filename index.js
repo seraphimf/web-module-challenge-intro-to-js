@@ -64,7 +64,8 @@ Do the following:
    HINT: look up the Number method
 */
 const num = '1999'
-console.log(parseInt(num))
+console.log(parseInt(num) + 1)
+
 
 
 
@@ -79,10 +80,17 @@ Do the following:
    2. Receive the parameters: a and b
    3. Multiply a and b and return the answer
 */
+const num1 = 2
+const num2 = 4
 
 function multiply(num1, num2){
   return num1 * num2;
-}
+} 
+
+console.log(multiply(2, 4));
+
+
+
 
 
 
@@ -95,10 +103,16 @@ Do the following:
  2. Use the received value to calculate the age in dog years (1 human year is equal to 7 dog years)
  3. Return the newly calculated age
 */
+const age = 5
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+
+function dogYears(age) {
+return(age * 7);
 }
+console.log(dogYears(5));
+
+  
+
 
 
 
