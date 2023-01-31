@@ -196,10 +196,36 @@ Use the game function below to do the following:
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
 
-function game(user, computer){
-  /*add your code here*/
-}
+computer = Math.floor(Math.random()* 3);
+console.log(computer);
 
+if(computer === 0) {
+computer = 'rock'
+} else if(computer === 1) {
+  computer = 'paper'
+} else if(computer === 2) {
+computer = 'scissors'
+} 
+
+
+function game(user, computer) {
+  //if(user === 'rock', 'paper', 'scissors' && computer === 'scissors', 'rock', 'paper')
+ //return('you win!') 
+//} else if(user === 'paper', 'rock', 'scissors' && computer === 'scissors', 'paper', 'rock') {
+  //return('you lose!')
+//} else {
+  //return("it's a tie")
+//}
+if(user === computer){
+  return 'draw!';
+} else if(computer === 'rock'){
+  return (user === 'paper') ? 'you win!' : 'you lose!'
+} else if(computer === 'paper'){
+  return (user === 'scissors') ? 'you win!' : 'you lose!'
+} else if(computer === 'scissors'){
+  return (user === 'rock') ? 'you win!' : 'you lose!'
+}
+}
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -213,10 +239,13 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
-}
+const Kilometers = 5
+//one km = 0.621371 miles according to google
 
+function miles(Kilometers){
+  return(Kilometers * 0.621371)
+}
+console.log(5 * 0.621371);
 
 
 //Task 5b - Centimeters to Feet
@@ -227,10 +256,13 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
-}
+const centimeters = 80
+// one ft = 30.48 cm 
 
+function feet(centimeters){
+  return(centimeters/30.48)
+}
+console.log(centimeters/30.48);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
