@@ -288,7 +288,7 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(bottles){
-  return (`${bottles} of soda on the wall, ${bottles} of soda, take one down pass it around ${bottles - 1} of soda on the wall`)
+  return (`${bottles} bottles of soda on the wall, ${bottles} bottles of soda, take one down pass it around ${bottles - 1} bottles of soda on the wall`)
 }
 
   for(let bottles = 10; bottles > 1; bottles--){
