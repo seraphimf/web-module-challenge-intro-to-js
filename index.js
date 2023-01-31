@@ -161,17 +161,31 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         Notice the expected and received, expected is what the test is looking for, and received is what was actually returned from this function. You can also see it's passing in two values, the number 4 and the number 1. 
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
-const pounds = 15
-const dogAge = 1
 
 function hungryDog(pounds, dogAge){
-  //how much Bruno eats//
-  //if (age < 1) {
-    //(age/12)
-  //}
-  return(15 * .03)
+  if(dogAge >= 1) {
+    //this is adult dog
+    if(pounds <= 5){
+      return pounds * .05
+    } else if( pounds <= 10) {
+      return pounds * .04
+    } else if(pounds <=15) {
+      return pounds * .03
+    } else {
+      return pounds * .02
+    } 
+  } else {
+   //this is puppy dog
+   if(dogAge <= 0.33){
+    return pounds * 0.1
+   } else if(dogAge <= 0.58) {
+    return pounds * 0.05
+   } else {
+    return pounds * 0.04
+   }
+  } 
 }
-console.log(hungryDog(15 * .03));
+
 
 
 
@@ -196,26 +210,20 @@ Use the game function below to do the following:
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
 
-computer = Math.floor(Math.random()* 3);
+let computer = Math.floor(Math.random()* 3);
 console.log(computer);
 
 if(computer === 0) {
 computer = 'rock'
 } else if(computer === 1) {
-  computer = 'paper'
+computer = 'paper'
 } else if(computer === 2) {
 computer = 'scissors'
 } 
 
 
 function game(user, computer) {
-  //if(user === 'rock', 'paper', 'scissors' && computer === 'scissors', 'rock', 'paper')
- //return('you win!') 
-//} else if(user === 'paper', 'rock', 'scissors' && computer === 'scissors', 'paper', 'rock') {
-  //return('you lose!')
-//} else {
-  //return("it's a tie")
-//}
+
 if(user === computer){
   return 'draw!';
 } else if(computer === 'rock'){
@@ -279,8 +287,10 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+let bottles = 50
+
+function annoyingSong(bottles){
+  //return(bottles of soda on the wall', bottles of soda, take one down pass it around, 49 bottles of soda on the wall')
 }
 
 
