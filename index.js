@@ -195,7 +195,7 @@ function hungryDog(pounds, dogAge){
 /*
 Do the following:
 1. Create a new variable that randomly generates the computer's choice, this must not be done inside the function
-2. Use Math.random to determine the computer's choice (Math.random gives a random number between 0 and 1)
+2. Use Math to determine the computer's choice (Math.random gives a random number between 0 and 1)
 3. Make a conditional that changes the variable to "rock", "paper", or "scissors" based on it's random number
 
 Use the game function below to do the following:
@@ -225,7 +225,7 @@ computer = 'scissors'
 function game(user, computer) {
 
 if(user === computer){
-  return 'draw!';
+  return "it's a tie";
 } else if(computer === 'rock'){
   return (user === 'paper') ? 'you win!' : 'you lose!'
 } else if(computer === 'paper'){
@@ -342,10 +342,20 @@ HINT - you may need to study tomorrow's content on arrays
 HINT - try looking up the .includes() method
 */
 
-
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCount(str) {
+  let count = 0;
+  let vowels = 'aeiou';
+for (let i = 0; i < str.length; i++){
+  if (vowels.indexOf(str[i]) > -1) {
+    count++;
+  }
 }
+
+  return count;
+}
+
+console.log(vowelCount('How many vowels are there?'));
+
 
 
 
